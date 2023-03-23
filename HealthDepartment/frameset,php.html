@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;
+color:white}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+   background:white;
+   border-radius: 30px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+   background:transparent;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 7px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+table, tr,td{
+border:0px solid black ;
+background-color: #4094fd;
+
+}
+.txtbx
+{
+  width: 200px;
+}
+textarea
+{
+  resize:none;
+}
+
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'PersonalInformation')">Personal Information</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'OtherInformation')">Other Information</button>
+  <button class="tablinks" onclick="openCity(event, 'Files')">Files</button>
+</div>
+
+<!--dito and Personal Information -->
+<div id="PersonalInformation" class="tabcontent">
+  <table>
+    <th colspan="7" bgcolor="black">Personal Information</th>
+    <tr><td>
+  Employee ID:</td>
+</tr>
+  <tr>
+    <td>Name:&nbsp&nbsp&nbsp&nbsp</td>
+    <td><input type="text" placeholder="First Name"></td>
+    <td><input type="text" placeholder="Middle Name"></td>
+    <td><input type="text" placeholder="Last Name"></td>
+    
+  </tr>
+  <td></td>
+  <td>First Name</td>
+  <td>Middle Name</td>
+  <td>Last Name</td>
+  </tr>
+  <tr>
+    <td>Address: </td>
+    <td colspan="3"><input type="text" style="width:528px;"></td>
+  </tr>
+  <tr>
+    <td>Sex: </td>
+    <td><input type="radio" id="html" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="html" name="gender" value="female" required>
+        <label for="female">Female</label>
+    </td>
+    <td>Date of Birth:</td>
+    <td><input type="date" required></td>
+  </tr>
+  <tr>
+    <td >Age:</td>
+    <td colspan=""><input type="text" placeholder="Age" required></td>
+    <td>Place of Birth</td>
+    <td colspan="2"><input type="text" style="width:320px;" required></td>
+  </tr>
+      <td>Contact No.</td>
+    <td><input type="text" placeholder="Contact Number" required></td>
+    <td>Civil Status
+      <td><input type="text" placeholder="Civil Status" required>
+  </tr>
+    <td>Citizenship</td>
+    <td><input type="text" placeholder="Citizenship" required></td>
+     <td>Religious Affiliation</td>
+    <td><input type="text" placeholder="Religious Affiliation" required></td>
+  </tr>
+    <td>Height</td>
+    <td colspan="4"><input type="text" placeholder="Height" style="width:100px;" >&nbsp&nbsp&nbsp&nbsp
+    Weight:  <input type="text" placeholder="Weight">
+    Blood Type: <input type="text" placeholder="Blood Type">
+  </td>
+  </tr>
+    <td>TIN No.</td>
+    <td><input type="text" placeholder="TIN No." required>
+      <td>SSS No.</td>
+    <td><input type="text" placeholder="SSS No." required>
+  <tr>
+    <td>Philheath No.
+    <td><input type="text" placeholder="Philheath No." required>
+    <td>Pag-ibig No.
+    <td><input type="text" placeholder="Pag-ibig No." required>
+  </tr>  
+  <tr>
+    <td>GSIS No.(if any)
+    <td><input type="text" placeholder="GSIS No.(if any)" >
+    <td>PERAA No.
+    <td><input type="text" placeholder="PERAA No.">
+  </tr>  
+  <tr>
+    <td>E-mail Address
+    <td><input type="text" placeholder="E-mail Address" required>
+    <td>Cellphone No.
+    <td><input type="text" placeholder="Cellphone No." required>
+  </tr>
+  <tr>
+    <th colspan="7" bgcolor="black"><center>Family Background</center></th>
+  </tr>  
+  <tr>
+    <td>Spouse
+  </tr>
+<tr>
+  <td>Surname
+    <td><input type="text" placeholder="Surname" required>
+</tr>
+<tr>
+  <td> First Name
+    <td><input type="text" placeholder="First Name" required>
+</tr>
+<tr>
+  <td>Middle Name
+    <td><input type="text" placeholder="Middle Name" required>
+</tr>
+<tr>
+  <td>Occupation
+    <td><input type="text" placeholder="Occupation"required>
+</tr>
+<tr>
+  <td>Employer/BusinessName
+    <td><input type="text" placeholder="Employer/BusinessName">
+</tr>
+<tr>
+  <td>Business Address
+    <td><input type="text" placeholder="Business Address">
+</tr>
+<tr>
+  <td>Employer/Bus. Tel. No.
+    <td><input type="text" placeholder="Employer/Bus. Tel. No.">
+</tr>
+<tr>
+  <td>Contact No. of Spouse
+    <td><input type="text" placeholder="Contact No. of Spouse" required>
+</tr>
+<tr>
+  <td>Father</td>
+  </tr>
+
+  <tr>
+    <td>Surname</td>
+    <td><input type="text" placeholder="Surname" required>
+    </tr>
+    <tr>
+    <td>First Name</td>
+    <td><input type="text" placeholder="Firstname" required>
+    </tr>
+    <tr>
+   <td>Middle Name</td>
+   <td><input type="text" placeholder="Lastname" required>
+  </tr>
+  <td>Mother Maiden Name</td>
+</tr>
+   <tr>
+    <td>Surname</td>
+    <td><input type="text" placeholder="Surname" required>
+    </tr>
+    <tr>
+    <td>First Name</td>
+    <td><input type="text" placeholder="Firstname" required>
+    </tr>
+    <tr>
+   <td>Middle Name</td>
+   <td><input type="text" placeholder="Lastname" required>
+  </tr>
+  <tr>
+<td><input type="button" value=" Save " colspan="7"></td>
+</tr>
+</table>
+</div>
+<!--tapos na ang Personal Information  -->
+
+
+<!--dito and Education -->
+<div id="Education" class="tabcontent">
+  <table>
+ <th colspan="7"bgcolor="black">Educational background</th>
+<tr>
+  <td>Level: </td>
+    <td>School: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+      <td>Degree: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+        <td>Year Graduated: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+     <td> HIGHEST GRADE/ UNITS EARNED<br>(if not graduated)</td>
+     <td>INCLUSIVE DATES OF ATTENDANCE From - To</td>
+     <td>SCHOLARSHIP/ ACADEMIC HONORS RECEIVED</td>
+</tr>
+<tr>
+  <td>High School:</td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+<tr>
+  <td>College:</td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+<tr>
+  <td>Graduate Studies:</td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+<tr>
+<td><input type="button" value=" Save " colspan="7"></td>
+</tr>
+<tr>
+<th colspan="7"bgcolor="black"><b><center>Civil Service Eligibility</center><b></th>
+</tr>
+<tr>
+  <td colspan="2">Career Service/ RA 1080 (Board/BAR) Under Special Law/ CES/CSEE </td>
+    <td>Rating</td>
+      <td>Date of Examination/ Conferment</td>
+        <td>Place of Examination/ Conferment</td>
+     <td> License (If applicable)</td>
+     <td> Action</td>
+     <td></td>
+</tr>
+<tr>
+  <td colspan="2"><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+<tr>
+<td colspan="7"bgcolor="black"><b><center>INVOLVEMENT IN OTHER CIVIC (NON-GOVERNMENT/PEOPLE) VOLUNTARY ORGANIZATION</center></b></td>
+</tr>
+<tr>
+<td colspan="2">Name and Address of Organization</td>
+    <td colspan="2">Inclusive Dates (mm/dd/yyyy)</td>
+      <td colspan="2">Position/ Nature of Work Assigned</td>
+        <td>Action</td>
+</tr>
+<tr>
+  <td colspan="2"><input type="text" class="txtbx" required></td>
+  <td colspan="2"><input type="text" required></td>
+  <td colspan="2"><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+
+</table>
+</div>
+
+<!--tapos na ang Education -->
+
+
+<!--dito and other information -->
+<div id="OtherInformation" class="tabcontent">
+  <table>
+ <th colspan="7" bgcolor="black">Work Experience</th>
+ <tr>
+    <td>Inclusive Dates (mm/dd/yyyy)</td>
+    <td>Position Title</td>
+      <td>Company/Office</td>
+        <td>Monthly Salary</td>
+     <td>Status of Employment</td>
+     <td>Length of Service (no of years & months)</td>
+     <td>Action</td>
+</tr>
+<tr>
+    <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+  <td><input type="text" class="txtbx" required></td>
+</tr>
+<tr>
+ <td colspan="7" bgcolor="black"><b><center>TRAINING PROGRAM (attended in the last 3 years, Start from the most recent</b></center></td>
+</tr>
+<tr>
+    <td colspan="2">Title of Seminar/Conference/ Workshop/ Short Courses</td>
+    <td colspan="2">Inclusive Dates
+(mm/dd/yyyy)</td>
+      <td>No. of Hours</td>
+        <td>Conducted/ Sponsored By</td>
+     <td>Action</td>
+     </tr>
+     <tr>
+    <td colspan="2"><input type="text" class="txtbx" required></td>
+  <td colspan="2"><input type="text" class="txtbx"required></td>
+  <td><input type="text" class="txtbx"required></td>
+  <td><input type="text" class="txtbx"required></td>
+  <td><input type="text" class="txtbx"required></td>
+</tr><tr>
+ <th colspan="7" bgcolor="black"><b><center>OTHER INFORMATION</b></center></th></tr>
+ <tr>
+  <td>Special Skills/Hobbies</td>
+    <td>  Non-Academic Distinctions/ Recognition/ Awards</td>
+ </tr>
+ <tr>
+  <td><textarea name="myTextBox" cols="30" rows="8">
+</textarea></td>
+  <td><textarea name="myTextBox" cols="30" rows="8">
+</textarea></td>
+ </tr>
+</table>
+</div>
+<!--tapos na ang other information -->
+
+<!--dito and Files -->
+<div id="Files" class="tabcontent">
+  <h3>Files</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<!--tapos na ang Files-->
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
